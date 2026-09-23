@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>02-hastaMayorDeEdad.html</title>
+</head>
+<body>
+    <h1>Verificación de Edad</h1>
+    <div id="mensaje"></div>
+
+    <script>
+        let edad;
+        do {
+            let entrada = prompt("Introduce tu edad (debes ser mayor o igual a 18):");
+
+            // Si cancela el prompt, evitamos un bucle infinito
+            if (entrada === null) {
+                break;
+            }
+
+            edad = Number(entrada);
+
+            // Aviso si introduce datos incorrectos
+            if (entrada.trim() === "" || isNaN(edad) || edad < 18) {
+                alert("Edad no válida o eres menor de edad. Inténtalo de nuevo.");
+            }
+
+        } while (isNaN(edad) || edad < 18);
+
+        // 3. Una vez que sale del bucle (porque edad >= 18), mostramos el mensaje en la página
+        if (edad >= 18) {
+            document.getElementById("mensaje").innerHTML = "<h2>Bienvenido, eres mayor de edad</h2>";
+        }
+    </script>
+</body>
+</html>
