@@ -2,4 +2,4 @@
 
 | UD | Tema |
 |----|------|
-| [UD1](./UD1) | HTML |
+| [UD1](./UD1) | Ejercicios básicos de JS |
