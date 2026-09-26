@@ -7,25 +7,21 @@
 <body>
     <h1>Tabla de multiplicar</h1>
     <ul id="Tabla_multiplicar"></ul>
-<script>    
+
+    <script>
         let numero = prompt("Introduce el número de la tabla de multiplicar que quieras: ");
         let numMult = Number(numero);
 
-        if (numero === null || numero.trim() === "" || isNaN(numMult) || numMult < 0) {
+        if (isNaN(numMult) || numMult < 0) {
             console.warn("Debes introducir un número válido");
         } else {
-            let htmlLista = "";
-            
-            for (let i = 0; i <= 10; i++) {
+            for (let i = 1; i <= 10; i++) {
                 let resultado = numMult * i;
                 let texto = numMult + " x " + i + " = " + resultado;
-                
+
                 console.log(texto);
-                
-                htmlLista += "<li>" + texto + "</li>";
+                document.getElementById("Tabla_multiplicar").innerHTML += "<li>" + texto + "</li>";
             }
-            
-            document.getElementById("Tabla_multiplicar").innerHTML = htmlLista;
         }
     </script>
 </body>
