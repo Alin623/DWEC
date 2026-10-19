@@ -6,8 +6,9 @@ Repositorio con los ejercicios de la asignatura Desarrollo Web en Entorno Client
 
 | UD  | Práctica | Tema                                                              |
 |-----|----------|--------------------------------------------------------------------|
-| [UD1](./UD1) | [P1a](./UD1/P1a) | Instalación y configuración de herramientas de desarrollo web (VSCode, extensiones, Live Server, Git, GitHub, CodeSandbox) |
-| [UD1](./UD1) | [P2a](./UD1/P2a) | Ejercicios básicos de JavaScript (bucles, condicionales, etc) |
+| [UD2](./UD2) | [P1a](./UD2/P1a) | Instalación y configuración de herramientas de desarrollo web (VSCode, extensiones, Live Server, Git, GitHub, CodeSandbox) |
+| [UD2](./UD2) | [P2a](./UD2/P2a) | Ejercicios básicos de JavaScript (bucles, condicionales, etc) |
+| [UD3](./UD3) | [Granja](./UD3) | Arrays, Math y objetos: granja con funciones constructoras, toString(), funciones lambda y JSON |
 
 ## Autor
 
