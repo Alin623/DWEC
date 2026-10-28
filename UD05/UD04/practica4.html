@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+     <head>
+          <meta charset="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+          <title>Responsive Cards</title>
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+               integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+               crossorigin="anonymous" />
+          <style>
+               body {
+                    background-color: #f8f9fa;
+                    padding-top: 20px;
+               }
+
+               .card {
+                    height: 100%;
+                    width: 100%;
+               }
+          </style>
+     </head>
+
+     <body>
+          <header>
+               <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#">Marvel</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                         <ul class="navbar-nav ms-auto">
+                              <li class="nav-item">
+                                   <a class="nav-link active" href="#">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="#">About</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="#">Contact</a>
+                              </li>
+                         </ul>
+                    </div>
+               </nav>
+          </header>
+
+          <main class="container">
+               <div id="cardsContainer" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                    <!--       aqui empieza la plantilla   -->
+                    <div class="col" id="plantilla">
+                         <div class="card" style="width: 18rem;">
+                              <img src="..." class="card-img-top" alt="...">
+                              <div class="card-body">
+                                   <h5 class="card-title">Card title</h5>
+                                   <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                              </div>
+                              <ul class="list-group list-group-flush">
+                                   <li class="list-group-item">An item</li>
+                                   <li class="list-group-item">A second item</li>
+                                   <li class="list-group-item">A third item</li>
+                              </ul>
+                              <!-- ojo, podemos modificar la plantilla para que incluya todo lo que queramos
+                               como un desplegable con la lista de comics en los que aparece etc
+                               
+                               en este caso, tendríamos que hacer una nueva plantilla, para cada uno de los comics,
+                               dentro de la plantilla de cada uno de los personajes
+                               -->
+
+                         </div>
+                    </div>
+                    <!--       aqui termina la plantilla   -->
+               </div>
+          </main>
+
+          <footer class="footer">
+
+          </footer>
+
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+               integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+               crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+               integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+               crossorigin="anonymous"></script>
+          <script src="./jspractica4.js"></script>
+     </body>
+
+</html>
