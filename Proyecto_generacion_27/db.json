@@ -1,0 +1,55 @@
+{
+  "favoritos": [
+    {
+      "id": 1,
+      "titulo": "Romancero gitano",
+      "autor": "Federico García Lorca",
+      "categoria": "Poesía",
+      "fechaAgregado": "2026-11-06"
+    },
+    {
+      "id": 2,
+      "titulo": "Marinero en tierra",
+      "autor": "Rafael Alberti",
+      "categoria": "Poesía",
+      "fechaAgregado": "2026-11-06"
+    },
+    {
+      "id": 3,
+      "titulo": "La realidad y el deseo",
+      "autor": "Luis Cernuda",
+      "categoria": "Poesía",
+      "fechaAgregado": "2026-11-06"
+    },
+    {
+      "id": 4,
+      "titulo": "Poeta en Nueva York",
+      "autor": "Federico García Lorca",
+      "categoria": "Poesía",
+      "fechaAgregado": "2026-11-06"
+    }
+  ],
+  "notas": [
+    {
+      "id": 1,
+      "obraId": 1,
+      "tituloObra": "Romancero gitano",
+      "textoNota": "Observar cómo Lorca combina la forma tradicional del romance con imágenes simbólicas y una atmósfera de tensión.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": 2,
+      "obraId": 2,
+      "tituloObra": "Marinero en tierra",
+      "textoNota": "La voz poética evoca el mar y la infancia desde la nostalgia; conviene fijarse en la musicalidad de los versos.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": 3,
+      "obraId": 3,
+      "tituloObra": "La realidad y el deseo",
+      "textoNota": "El título resume una tensión central de la poesía de Cernuda: el conflicto entre la aspiración personal y el mundo real.",
+      "fecha": "2026-11-06"
+    }
+  ]
+}

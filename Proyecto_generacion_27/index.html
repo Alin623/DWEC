@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2e2a25">
+    <meta name="description" content="Archivo digital de autores, obras y fuentes de la Generación del 27.">
+    <title>Archivo del 27 — Autores, obras y memoria</title>
+    <link rel="stylesheet" href="./src/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="header-topline">
+          <span class="brand-mark">Archivo · Literatura · Memoria</span>
+          <span class="brand-mark">Proyecto académico · 2.º DAW</span>
+        </div>
+        <nav class="site-nav" aria-label="Navegación principal">
+          <a href="#archivo">Explorar el archivo</a>
+          <a href="#bibliografia">Bibliografía</a>
+          <a href="#biblioteca">Mi biblioteca</a>
+        </nav>
+        <p class="eyebrow">Una generación, muchas voces</p>
+        <h1 class="site-title">Archivo Histórico y Literario de la Generación del 27</h1>
+        <p class="site-deck">Un recorrido por quienes renovaron la poesía, el teatro y las artes en España: sus vidas, sus obras y las fuentes para seguir leyendo.</p>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="intro-grid" aria-labelledby="intro-heading">
+        <div>
+          <p class="eyebrow">Contexto</p>
+          <h2 id="intro-heading">Una constelación de autores, no una lista cerrada</h2>
+          <p>La etiqueta «Generación del 27» reúne a poetas y artistas unidos por amistades, revistas, lecturas y proyectos compartidos. Este archivo destaca voces centrales y recupera también a creadoras cuya contribución fue durante mucho tiempo menos visible.</p>
+        </div>
+        <aside class="intro-note">
+          <strong>Cómo usar este archivo</strong>
+          Explora las fichas locales sin conexión, filtra por tema y fecha, y consulta catálogos externos para ampliar los registros bibliográficos.
+        </aside>
+      </section>
+
+      <section id="archivo" class="archive-section" aria-labelledby="search-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Catálogo</p>
+            <h2 id="search-heading">Explorar el archivo</h2>
+            <p>Empieza por una persona o busca obras por autor, género y año de publicación.</p>
+          </div>
+        </div>
+
+        <div class="search-panel">
+          <div class="search-tabs" role="tablist" aria-label="Tipo de búsqueda">
+            <button type="button" role="tab" id="tab-authors" aria-controls="search-results"
+              aria-selected="true" data-category="autores">Autores</button>
+            <button type="button" role="tab" id="tab-works" aria-controls="search-results"
+              aria-selected="false" data-category="obras" tabindex="-1">Obras</button>
+          </div>
+
+          <form id="search-form" class="search-form" role="search">
+            <div class="form-field form-field--wide">
+              <label for="author">Autor o autora</label>
+              <input id="author" name="autor" type="search" maxlength="100"
+                placeholder="Federico García Lorca" autocomplete="off">
+            </div>
+            <div class="form-field form-field--wide">
+              <label for="genre">Género o tema</label>
+              <input id="genre" name="genero" type="search" maxlength="80"
+                placeholder="Poesía, exilio, teatro…">
+            </div>
+            <div class="form-field">
+              <label for="language">Idioma del catálogo externo</label>
+              <select id="language" name="idioma">
+                <option value="es" selected>Español</option>
+                <option value="en">Inglés</option>
+                <option value="fr">Francés</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="year-from">Publicado desde (obras)</label>
+              <input id="year-from" name="desde" type="number" min="1800" max="2026" inputmode="numeric">
+            </div>
+            <div class="form-field">
+              <label for="year-to">Publicado hasta (obras)</label>
+              <input id="year-to" name="hasta" type="number" min="1800" max="2026" inputmode="numeric">
+            </div>
+            <div class="form-actions">
+              <button class="button" type="submit">Buscar en el archivo</button>
+              <label class="inline-help">
+                <input id="include-external" name="externos" type="checkbox">
+                Ampliar con Open Library
+              </label>
+              <p id="loading-indicator" class="loading-indicator" role="status" hidden>Buscando…</p>
+            </div>
+          </form>
+        </div>
+
+        <p id="feedback" class="feedback" role="status" hidden></p>
+        <div id="author-profile" class="author-profile" aria-live="polite" hidden></div>
+        <div class="results-heading">
+          <h3 id="results-title" class="section-title">Autores y autoras</h3>
+          <p id="results-count"></p>
+        </div>
+        <section id="search-results" class="results-grid" role="tabpanel" aria-labelledby="tab-authors"
+          aria-live="polite" aria-label="Resultados"></section>
+      </section>
+
+      <section id="bibliografia" class="archive-section" aria-labelledby="bibliography-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Para seguir investigando</p>
+            <h2 id="bibliography-heading">Bibliografía y archivos</h2>
+            <p>Fuentes de referencia para contrastar fechas, localizar ediciones y profundizar en el contexto de la Edad de Plata.</p>
+          </div>
+        </div>
+        <div id="bibliography-list" class="bibliography-grid"></div>
+      </section>
+
+      <section id="biblioteca" class="archive-section" aria-labelledby="library-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Lecturas personales</p>
+            <h2 id="library-heading">Mi biblioteca del 27</h2>
+            <p>Guarda obras para volver a ellas y añade notas de lectura. Los cambios se guardan en la API local json-server.</p>
+          </div>
+        </div>
+        <div class="library-panel">
+          <p id="library-status" class="inline-help" role="status">Conectando con la biblioteca local…</p>
+          <div class="library-layout">
+            <div>
+              <h3>Obras guardadas</h3>
+              <ul id="favorites-list" class="library-list"></ul>
+              <h3>Notas de lectura</h3>
+              <ul id="notes-list" class="notes-list"></ul>
+            </div>
+            <form id="note-form" class="note-form">
+              <h3>Añadir una nota crítica</h3>
+              <label for="note-work">Obra</label>
+              <select id="note-work" name="obra" required>
+                <option value="">Selecciona una obra guardada</option>
+              </select>
+              <label for="note-text">Tu nota</label>
+              <textarea id="note-text" name="texto" maxlength="1000" required
+                placeholder="Anota una idea, una cita que quieras localizar o una pregunta de lectura…"></textarea>
+              <button class="button" type="submit">Guardar nota</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>Archivo Histórico y Literario de la Generación del 27</span>
+        <span>Datos editoriales sujetos a contraste con las fuentes enlazadas.</span>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/js/app.js"></script>
+  </body>
+</html>

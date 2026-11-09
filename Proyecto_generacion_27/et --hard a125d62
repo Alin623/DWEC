@@ -1,0 +1,14 @@
+[33m8a7ca14[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: reset: moving to 8a7ca14
+[33m8a7ca14[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{1}: reset: moving to HEAD
+[33m8a7ca14[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{2}: reset: moving to HEAD
+[33m8a7ca14[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{3}: reset: moving to HEAD
+[33m8a7ca14[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{4}: reset: moving to HEAD
+[33m8a7ca14[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{5}: reset: moving to HEAD
+[33m8a7ca14[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{6}: reset: moving to HEAD~1
+[33ma125d62[m HEAD@{7}: reset: moving to HEAD~1
+[33me1e3c7e[m HEAD@{8}: commit: style: borrado de todo el contenido del repositorio
+[33ma125d62[m HEAD@{9}: commit: docs: documenta el proyecto y las pruebas
+[33m8a7ca14[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{10}: commit: test: cubre catálogo, búsquedas y validaciones
+[33m38ff86c[m HEAD@{11}: commit: feat: implementa búsquedas, servicios externos y biblioteca
+[33m4c9e6df[m HEAD@{12}: commit: feat: añade el catálogo local y sus componentes visuales
+[33m4b4164f[m HEAD@{13}: commit (initial): chore: inicializa la aplicación y su estructura base

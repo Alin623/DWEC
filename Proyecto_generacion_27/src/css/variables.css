@@ -1,0 +1,17 @@
+:root {
+  color-scheme: light;
+  --color-pergamino: #f5f0e5;
+  --color-papel: #fffdf8;
+  --color-tinta: #28251f;
+  --color-tinta-suave: #625e55;
+  --color-acento-granate: #8c3040;
+  --color-acento-oscuro: #632331;
+  --color-oliva: #61705a;
+  --color-linea: #ded5c5;
+  --color-sombra: rgb(40 37 31 / 8%);
+  --fuente-editorial: Georgia, 'Times New Roman', serif;
+  --fuente-interfaz: 'Segoe UI', Tahoma, sans-serif;
+  --ancho-contenido: 76rem;
+  --radio-tarjeta: 0.35rem;
+  --espacio-seccion: clamp(3rem, 7vw, 6rem);
+}
